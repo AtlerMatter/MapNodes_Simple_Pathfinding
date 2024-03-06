@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "C/C++: cl.exe build project DEBUG",
+			"command": "${workspaceFolder}\\BUILD_debug.bat",
+			"args": [
+				
+			],
+			"options": {
+				//"cwd": "${fileDirname}"
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: cl.exe"
+		},
+		{
+			"type": "shell",
+			"label": "C/C++: cl.exe build project RELEASE",
+			"command": "${workspaceFolder}\\BUILD_release.bat",
+			"args": [
+				
+			],
+			"options": {
+				//"cwd": "${fileDirname}"
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": {
+				"kind": "build",
+				//"isDefault": true
+			},
+			"detail": "compiler: cl.exe"
+		}
+	]
+}
